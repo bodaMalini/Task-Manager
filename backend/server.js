@@ -10,7 +10,9 @@ app.use(express.json());
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/taskmanager")
+  .connect(
+    "mongodb+srv://malini:Malini12345@cluster0.wqzlv4f.mongodb.net/taskmanager",
+  )
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
